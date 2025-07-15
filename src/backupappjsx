@@ -1,0 +1,61 @@
+import './App.css'
+//import database from './firebase'
+//import { useEffect, useState} from 'react';
+//import { database, ref, onValue } from './firebase'
+//import {database} from './firebase'
+//import {ref} from './firebase'
+//import DynamicSVG from './components/DynamicSVG'
+//import retank from './assets/tank.svg'
+import StudioData from './StudioData';
+//import Tank1 from './components/tank.jsx'
+
+function App() {
+  return (
+    <div>
+      <img src={retank}  className='picturetank'  alt="Tank Logo" />
+      
+      <h1>NILAI:</h1>
+      <p></p>
+    </div>
+  )
+};
+
+function App1() {
+  return (
+    <div className="App">
+      <h1>MyBU Studio Monitoring</h1>
+      <StudioData />
+    
+    </div>
+  );
+};
+
+function App2() {
+  return (
+    <div>
+      <h1>SVG dengan Data Realtime Firebase</h1>
+      <DynamicSVG />
+    </div>
+  );
+}
+
+function DynamicCircle() {
+ return (
+    <svg width="1000" height="1000">
+      <circle cx="500" cy="500" r="400" fill="#000000" xmlns="http://www.w3.org/2000/svg"/>
+    </svg>
+  );
+}
+
+function Tank() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Tank Level Monitor</h1>
+        <Tank />
+      </header>
+    </div>
+  );
+}
+
+export {App, App1};
